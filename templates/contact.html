@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Contact us</h1>
+    <h1>-----------------------------</h1>
+    <form action="http://maps.google.com/maps" method="get" target="_blank">
+       <input type="hidden" name="daddr" value="Brighton College, Eastern Rd, Brighton BN2 0AL" />
+       <input type="submit" style="background-color: gray" value="Find us on google maps here" />
+    </form>
+{% endblock content %}
