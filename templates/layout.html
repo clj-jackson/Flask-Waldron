@@ -11,6 +11,18 @@
         <style>
             body {background-color: lightgray}
             body {color: black}
+            .topnav-right {
+                float: right;
+            }
+
+            a {
+                color: gray;
+            }
+            a:hover {
+                color: lightgray;
+                transform: scale(1.2)
+            }
+
         </style>
 
         {% if title %}
@@ -20,14 +32,17 @@
         {% endif %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black"> <a class="navbar-brand" href="/" data-abc="true">Flask Project</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black"> <a class="navbar-brand" href="/" data-abc="true">Waldron</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"> <a class="nav-link" href="/" data-abc="true">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/contact" data-abc="true">Contact</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/about" data-abc="true">About</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="/opentabs" data-abc="true">Tabs</a></li>
                 </ul>
+                <div class="topnav-right">
+                    <a class="nav-link" href="/login" data-abc="true">Login</a>
+                </div>
             </div>
         </nav>
         <main role="main" class="container">

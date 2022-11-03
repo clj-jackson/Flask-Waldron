@@ -33,5 +33,9 @@ def contact():
 def tabs():
     return render_template("tabs.html", title="Open Tabs")
 
+@app.route("/login")
+def login():
+    return render_template("login.html", title="Login")
+
 if __name__ == "__main__":
     app.run(debug=True)
