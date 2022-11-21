@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for
+from forms import RegForm, LoginForm
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "0bd24ce2ce9d0ac49fea3f26561cc7fa4fe296ef22964a68594b489c804d4f3a"
 
 posts = [
     {
@@ -35,7 +37,14 @@ def tabs():
 
 @app.route("/login")
 def login():
-    return render_template("login.html", title="Login")
+    form = LoginForm()
+    return render_template("login.html", title="Login", form=form)
+
+@app.route("/register")
+def register():
+    form = RegForm()
+    return render_template("register.html", title="Register", form=form)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
