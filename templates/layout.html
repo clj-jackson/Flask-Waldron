@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <style>
-            body {background-color: lightgray}
-            body {color: black}
+            body {background-color: #FDDAB6}
+            body {color: #D64819}
             .topnav-right {
                 float: right;
             }
@@ -41,6 +41,7 @@
                     <li class="nav-item"> <a class="nav-link" href="/opentabs" data-abc="true">Tabs</a></li>
                 </ul>
                 <div class="topnav-right">
+                    <a class="nav-link" href="/register" data-abc="true">Register</a>
                     <a class="nav-link" href="/login" data-abc="true">Login</a>
                 </div>
             </div>
@@ -48,7 +49,7 @@
         <main role="main" class="container">
           <div class="row">
             <div class="col-md-8">
-              {% block content %}{% endblock %}
+                {% block content %}{% endblock %}
             </div>
             <div class="col-md-4">
               <div class="content-section">
