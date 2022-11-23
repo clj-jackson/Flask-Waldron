@@ -13,10 +13,8 @@ class RegForm(FlaskForm):
 
 class LoginForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired(), Email()])
-    username = StringField("Username", validators=[DataRequired(), Length(min=5, max=20)])
 
     password = PasswordField("Password", validators=[DataRequired(), Length(min=8, max=30)])
-    confirm_password = PasswordField("Confirm Password", validators=[DataRequired(), EqualTo("password")])
 
     remember_user = BooleanField("Remember Me")
 
